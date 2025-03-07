@@ -1,42 +1,117 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  --Night: #131515;
+  --Jet: #2b2c28;
+  --Persian-green: #339989;
+  --Tiffany-Blue: #7de2d1;
+  --Snow: #fffafb;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: var(--Night); */
+}
+
+.App {
+  background-color: var(--Night);
+  width: 100Vw;
+  min-height: 100vh;
+  height: fit-content;
+  color: var(--Snow);
+  padding-bottom: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px 20px;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+main {
+  margin: 40px auto;
+  text-align: center;
+
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main h1 {
+  font-size: 1rem;
+  opacity: 0.4;
+}
+
+.main h2 {
+  font-size: 2.5rem;
+}
+
+.main p {
+  font-size: 1.3rem;
+}
+
+.textarea h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+
+/* From Uiverse.io by naelawadallah */
+.search-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.search-header__input {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: #0a0a0a;
+  border: solid 0.5px #525252;
+  color: #646464;
+  padding: 0.7rem 1rem;
+  border-radius: 25px;
+  width: 240px;
+  height: 48px;
+  transition: all ease-in-out 0.5s;
+
+  opacity: 1;
+  text-align: center;
+}
+
+@media (min-width:1000px) {
+  .navbar {
+    padding: 20px 60px;
   }
-  to {
-    transform: rotate(360deg);
+
+  main {
+    width: 60%;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .main h2 {
+    font-size: 4rem;
   }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .search-header__input {
+    width: 400px;
+  }
 }
