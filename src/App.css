@@ -50,6 +50,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  position: relative;
 }
 
 .main h1 {
@@ -68,6 +69,14 @@ main {
 .textarea h2 {
   font-size: 2rem;
   padding-bottom: 1rem;
+}
+
+.textarea {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
 }
 
 
@@ -113,5 +122,9 @@ main {
 
   .search-header__input {
     width: 400px;
+  }
+
+  .textarea {
+    width: 50%;
   }
 }

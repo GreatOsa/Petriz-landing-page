@@ -6,10 +6,16 @@ export default function Textarea() {
     <div>
       <div class="messageBox">
         {/* <label for="textarea">Message</label> */}
-        <textarea required="" cols="50" rows="10" id="textarea" name="textarea">
-          {" "}
-        </textarea>
+
         <div class="messageBox__send_container">
+          {" "}
+          <textarea
+            required=""
+            cols="50"
+            rows="10"
+            id="textarea"
+            name="textarea"
+          ></textarea>
           <div class="messageBox__button">
             <LuSend className="messageBox_icon" />
           </div>
