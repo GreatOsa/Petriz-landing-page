@@ -1,4 +1,4 @@
-button {
+.button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,6 +19,6 @@ button {
     text-shadow: 0 1px #fff;
 }
 
-button:hover {
+.button:hover {
     box-shadow: 0 2px 3px 1px var(--Snow);
 }

@@ -1,3 +1,17 @@
+/* .dark {
+  --clr-bg: #131515;
+  Night
+  --clr-bg-alt: #2b2c28;
+  Jet
+  --clr-fg: #fffafb;
+  Snow
+  --clr-fg-alt: #339989;
+  Persian-green/
+  --clr-fg-alt2: #7de2d1;
+  Tiffany-Blue
+  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+} */
 :root {
   --Night: #131515;
   --Jet: #2b2c28;
@@ -14,6 +28,11 @@
   /* background-color: var(--Night); */
 }
 
+/* .Landing {
+  width: fit-content;
+  min-height: fit-content;
+} */
+
 .App {
   background-color: var(--Night);
   width: 100Vw;
@@ -27,7 +46,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--secondary-color);
+  /* background-color: var(--Jet) */
   color: white;
   padding: 10px 20px;
 }
@@ -92,6 +111,7 @@ main {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-family: inherit;
   font-size: 16px;
   background-color: #0a0a0a;
@@ -102,7 +122,6 @@ main {
   width: 240px;
   height: 48px;
   transition: all ease-in-out 0.5s;
-
   opacity: 1;
   text-align: center;
 }
@@ -120,6 +139,7 @@ main {
     font-size: 4rem;
   }
 
+  /* search-header__input */
   .search-header__input {
     width: 400px;
   }
