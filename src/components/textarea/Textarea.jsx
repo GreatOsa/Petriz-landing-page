@@ -4,10 +4,10 @@ import { LuSend } from "react-icons/lu";
 export default function Textarea() {
   return (
     <div>
-      <div class="messageBox">
+      <div className="messageBox">
         {/* <label for="textarea">Message</label> */}
 
-        <div class="messageBox__send_container">
+        <div className="messageBox__send_container">
           {" "}
           <textarea
             required=""
@@ -16,7 +16,7 @@ export default function Textarea() {
             id="textarea"
             name="textarea"
           ></textarea>
-          <div class="messageBox__button">
+          <div className="messageBox__button">
             <LuSend className="messageBox_icon" />
           </div>
         </div>

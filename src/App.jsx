@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import Button from "./components/button/button";
-import Textarea from "./components/textarea/Textarea";
 import SignUp from "./pages/Login/SignUp";
 import Login from "./pages/Login/Login";
-import LandingPage from "./pages/Login/LandingPage";
+import LandingPage from "./pages/LandingPage";
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import ErrorPage from "./Error-page";
 
 function App() {
+  // const router = createBrowserRouter([]);
   const [isSearch, setIsSearch] = useState(true);
 
   const handleSearch = () => {
@@ -14,6 +15,7 @@ function App() {
   };
 
   // Handle clicking outside textarea
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (!event.target.closest(".textarea") && !isSearch) {
@@ -28,9 +30,20 @@ function App() {
   }, [isSearch]);
   return (
     <div className="App">
-      <LandingPage isSearch={isSearch} handleSearch={handleSearch} />
+      <BrowserRouter basename="/Petriz-landing-page">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <LandingPage isSearch={isSearch} handleSearch={handleSearch} />
+            }
+          />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
-    // <Login />
   );
 }
 

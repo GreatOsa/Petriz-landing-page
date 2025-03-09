@@ -3,6 +3,7 @@ import "./Login.css";
 import googleSvg from "./assets/google.svg";
 import appleSvg from "./assets/apple.svg";
 import { SigninWith } from "./OauthButton";
+import { Link } from "react-router-dom";
 
 export default function Signup() {
   return (
@@ -22,8 +23,9 @@ export default function Signup() {
         </form>
         <div className="text-center">
           <span>Already have an account? </span>
-          {/* <Link to="/register"? */}
-          <span className="link">Login</span>
+          <Link to="/login" className="link">
+            Login
+          </Link>
         </div>
         <div className="divider-container">
           <div className="divider"></div>

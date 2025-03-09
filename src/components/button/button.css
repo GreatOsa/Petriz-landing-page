@@ -17,6 +17,13 @@
     font-weight: 600;
     color: var(--snow);
     text-shadow: 0 1px #fff;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--snow);
 }
 
 .button:hover {

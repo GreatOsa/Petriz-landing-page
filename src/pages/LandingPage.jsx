@@ -1,15 +1,19 @@
 import React from "react";
-import Button from "../../components/Button/Button";
-import Textarea from "../../components/textarea/Textarea";
+
+import Button from "../components/Button/Button";
+
+import Textarea from "../components/textarea/Textarea";
+import { Link } from "react-router-dom";
 
 export default function LandingPage({ isSearch, handleSearch }) {
   return (
     <div className="Landing">
-      {" "}
       <nav className="navbar">
         <p className="logo">PETRIZ</p>
         <div>
-          <Button className="button" name="Login" />
+          <Link to="/login">
+            <Button className="button" name="Login" />
+          </Link>
           {/* <Hamburger /> */}
         </div>
       </nav>
@@ -23,16 +27,16 @@ export default function LandingPage({ isSearch, handleSearch }) {
               nesciunt harum distinctio, quis quasi laudantium amet voluptas a
               ut? Pariatur, mollitia doloribus. A, omnis.
             </p>
-            <div class="search-header">
-              <div class="search-header__input" onClick={handleSearch}>
+            <div className="search-header">
+              <div className="search-header__input" onClick={handleSearch}>
                 Search
-                <div class="search-header__button">
+                <div className="search-header__button">
                   <svg
                     fill="none"
                     viewBox="0 0 18 18"
                     height="18"
                     width="18"
-                    class="search-header__icon"
+                    className="search-header__icon"
                   >
                     <path
                       fill="#3A3A3A"

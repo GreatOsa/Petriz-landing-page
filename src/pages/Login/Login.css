@@ -1,16 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .Login {
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw; */
+    height: inherit;
     display: flex;
     justify-content: center;
-    align-items: center;
+
     background-color: var(--Night);
+    min-height: 90vh;
+    align-items: center;
 }
 
 .login-container {
@@ -20,9 +16,8 @@
     flex-direction: column;
     gap: 1.5rem;
     color: var(--Snow);
-}
 
-.login-container h2 {}
+}
 
 .small-container {
     display: flex;
